@@ -16,14 +16,14 @@ export const ISSUES_URL = `${REPO_URL}/issues`;
 export const AF_PLAYBOOK_URL = 'https://agenticfabriq.github.io';
 
 /**
- * The author's LinkedIn profile, or `null` until it is supplied.
+ * The author's LinkedIn profile.
  *
- * `null` rather than a guessed vanity URL: a `sameAs` pointing at the wrong
- * profile actively works against the reason this site names its author, and a
- * wrong claim about a real person is worse than a missing one. `personNode()`
- * omits it entirely while it is null.
+ * Typed as nullable on purpose: `personNode()` omits it from `sameAs` rather
+ * than emitting an empty string if it is ever unset again. A `sameAs` pointing
+ * at the wrong profile would work against the reason this site names its
+ * author at all, so it is only ever set to a URL the author supplied.
  */
-export const LINKEDIN_URL: string | null = null;
+export const LINKEDIN_URL: string | null = 'https://www.linkedin.com/in/paulina-xu-5bba0821b/';
 /**
  * The publisher's own logo, served from the publisher's own site. The www host
  * is used deliberately: the apex redirects, and a structured-data consumer that

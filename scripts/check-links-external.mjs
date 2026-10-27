@@ -29,7 +29,16 @@ const BOT_HOSTILE = new Map([
   ['www.carta.com', '403 to automated requests; verified by hand 2026-10-27'],
   ['hbr.org', 'paywall and bot protection; verified by hand 2026-10-27'],
   ['www.cbinsights.com', 'interstitial on datacentre IPs; verified by hand 2026-10-27'],
+  ['www.linkedin.com', 'answers automated requests with HTTP 999; verified by hand 2026-10-27'],
 ]);
+
+/**
+ * One expected failure that is NOT suppressed: while this repository is
+ * private, GitHub answers anonymous requests for it and its issue tracker with
+ * 404. Those links are correct and resolve the moment the repository is made
+ * public. They are left visible rather than skipped, because suppressing them
+ * would also hide the case where the repository is later renamed or moved.
+ */
 
 /** A real browser UA, because the alternative is measuring bot filters. */
 const USER_AGENT =

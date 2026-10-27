@@ -1,7 +1,15 @@
 ---
 import Seo from '../components/Seo.astro';
 import { PILLARS } from '../lib/pillars';
-import { AF_PLAYBOOK_URL, GITHUB_PROFILE_URL, PARENT_URL, REPO_URL, SITE_NAME, withBase } from '../lib/seo';
+import {
+  AF_PLAYBOOK_URL,
+  GITHUB_PROFILE_URL,
+  LINKEDIN_URL,
+  PARENT_URL,
+  REPO_URL,
+  SITE_NAME,
+  withBase,
+} from '../lib/seo';
 import '../styles/global.css';
 
 interface Props {
@@ -36,7 +44,9 @@ const { title, description, path, jsonLd, ogType } = Astro.props;
         every guide is held to, and how to report an error.
       </p>
       <p>
-        Written by <a href={GITHUB_PROFILE_URL}>Paulina Xu</a>, founder of
+        Written by <a href={GITHUB_PROFILE_URL}>Paulina Xu</a>{LINKEDIN_URL && (
+          <> (<a href={LINKEDIN_URL}>LinkedIn</a>)</>
+        )}, founder of
         <a href={PARENT_URL}>Agentic Fabriq</a>. If you are wiring agents into real systems,
         the technical companion to this playbook is the
         <a href={AF_PLAYBOOK_URL}>Agent Integration Playbook</a>.

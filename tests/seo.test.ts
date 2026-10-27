@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { readFileSync, existsSync } from 'node:fs';
 import fg from 'fast-glob';
 import * as cheerio from 'cheerio';
-import { BASE, PERSON_ID, SITE_URL } from '../src/lib/seo';
+import { BASE, LINKEDIN_URL, PERSON_ID, SITE_URL } from '../src/lib/seo';
 
 const pages: Array<{ file: string; $: cheerio.CheerioAPI }> = [];
 
@@ -168,11 +168,21 @@ describe('publisher identity', () => {
     expect(seen.size).toBe(1);
   });
 
-  it('never emits an empty or guessed linkedin url', () => {
+  it('names the author’s linkedin profile in sameAs on every page', () => {
+    for (const { file, $ } of pages) {
+      const people = blocks($).filter((b) => b['@type'] === 'Person');
+      for (const person of people) {
+        expect(person.sameAs, file).toContain(LINKEDIN_URL);
+      }
+    }
+  });
+
+  it('emits no empty or truncated profile url anywhere', () => {
     for (const { file, $ } of pages) {
       for (const block of blocks($)) {
         const json = JSON.stringify(block);
-        expect(json.includes('linkedin.com/in/"') || json.includes('"linkedin'), file).toBe(false);
+        expect(json.includes('""'), file).toBe(false);
+        expect(json.includes('linkedin.com/in/"'), file).toBe(false);
       }
     }
   });

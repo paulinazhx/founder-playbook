@@ -5,6 +5,7 @@ import {
   AF_PLAYBOOK_URL,
   GITHUB_PROFILE_URL,
   ISSUES_URL,
+  LINKEDIN_URL,
   PARENT_URL,
   REPO_URL,
   aboutPageJsonLd,
@@ -41,8 +42,9 @@ const contributing = `${REPO_URL}/blob/main/CONTRIBUTING.md`;
   <h2>Who writes this</h2>
 
   <p>
-    I am <a href={GITHUB_PROFILE_URL}>Paulina Xu</a>, founder of
-    <a href={PARENT_URL}>Agentic Fabriq</a>. I write this playbook because the advice I
+    I am Paulina Xu — <a href={GITHUB_PROFILE_URL}>GitHub</a>{LINKEDIN_URL && (
+      <>, <a href={LINKEDIN_URL}>LinkedIn</a></>
+    )} — founder of <a href={PARENT_URL}>Agentic Fabriq</a>. I write this playbook because the advice I
     needed as a first-time founder existed in three unhelpful forms: a war story from a
     company nothing like mine, a framework with no numbers in it, or a thread that stopped
     exactly where the hard part started.
