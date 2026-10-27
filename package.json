@@ -1,0 +1,34 @@
+{
+  "name": "founder-playbook",
+  "type": "module",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "lint:md": "markdownlint-cli2 \"src/content/**/*.md\" \"*.md\"",
+    "check:links": "node scripts/check-links.mjs",
+    "check:links:external": "node scripts/check-links-external.mjs",
+    "og": "node scripts/generate-og.mjs",
+    "check:og": "node scripts/check-og.mjs",
+    "readme": "node scripts/readme-index.mjs --write",
+    "check:readme": "node scripts/readme-index.mjs",
+    "verify": "npm run build && npm run test && npm run lint:md && npm run check:links && npm run check:og && npm run check:readme"
+  },
+  "dependencies": {
+    "@astrojs/rss": "4.0.19",
+    "@astrojs/sitemap": "3.7.3",
+    "astro": "7.2.2"
+  },
+  "devDependencies": {
+    "cheerio": "1.2.0",
+    "fast-glob": "3.3.3",
+    "js-yaml": "4.3.1",
+    "markdownlint-cli2": "0.23.2",
+    "satori": "0.29.1",
+    "sharp": "0.35.3",
+    "vitest": "4.1.10"
+  }
+}

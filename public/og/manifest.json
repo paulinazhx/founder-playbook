@@ -1,0 +1,69 @@
+{
+  "generator": "scripts/generate-og.mjs",
+  "template": 1,
+  "width": 1200,
+  "height": 630,
+  "default": "/og/default.png",
+  "images": {
+    "/og/default.png": {
+      "route": null,
+      "fingerprint": "fad0a615aba42cdf"
+    },
+    "/og/home.png": {
+      "route": "/",
+      "fingerprint": "3ee60337d7460285"
+    },
+    "/og/about.png": {
+      "route": "/about/",
+      "fingerprint": "107efa6288dfa6c2"
+    },
+    "/og/build.png": {
+      "route": "/build/",
+      "fingerprint": "e4c8cf256baf46c7"
+    },
+    "/og/build-ai-tools.png": {
+      "route": "/build/ai-tools/",
+      "fingerprint": "6c9d469de0a66054"
+    },
+    "/og/build-scoping-v1.png": {
+      "route": "/build/scoping-v1/",
+      "fingerprint": "d7b8cc885ce3850f"
+    },
+    "/og/build-shipping-without-engineers.png": {
+      "route": "/build/shipping-without-engineers/",
+      "fingerprint": "dabb038d3bf60d56"
+    },
+    "/og/sell.png": {
+      "route": "/sell/",
+      "fingerprint": "ee0d4af14c328b35"
+    },
+    "/og/sell-discovery-and-demos.png": {
+      "route": "/sell/discovery-and-demos/",
+      "fingerprint": "a47be4ffb901e95b"
+    },
+    "/og/sell-outbound.png": {
+      "route": "/sell/outbound/",
+      "fingerprint": "5fbf846e30ca5e65"
+    },
+    "/og/sell-pricing.png": {
+      "route": "/sell/pricing/",
+      "fingerprint": "fc27d78ba6db8f6b"
+    },
+    "/og/run.png": {
+      "route": "/run/",
+      "fingerprint": "00e088da8aa7ec7c"
+    },
+    "/og/run-first-hires.png": {
+      "route": "/run/first-hires/",
+      "fingerprint": "860c53997e00955e"
+    },
+    "/og/run-fundraising.png": {
+      "route": "/run/fundraising/",
+      "fingerprint": "583bd2148e930320"
+    },
+    "/og/run-investor-updates.png": {
+      "route": "/run/investor-updates/",
+      "fingerprint": "9fcebc4fa900ec72"
+    }
+  }
+}

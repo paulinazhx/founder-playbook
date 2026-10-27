@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import {
+  AF_PLAYBOOK_URL,
+  GITHUB_PROFILE_URL,
+  ISSUES_URL,
+  PARENT_URL,
+  REPO_URL,
+  aboutPageJsonLd,
+  breadcrumbJsonLd,
+  canonical,
+  personJsonLd,
+  withBase,
+} from '../lib/seo';
+import { ABOUT_PAGE } from '../lib/site-pages.js';
+
+const url = canonical(ABOUT_PAGE.path);
+const updated = '2026-10-27';
+const trail = [
+  { name: 'The Founder Playbook', url: canonical('/') },
+  { name: 'About', url },
+];
+const contributing = `${REPO_URL}/blob/main/CONTRIBUTING.md`;
+---
+<BaseLayout
+  title={ABOUT_PAGE.title}
+  description={ABOUT_PAGE.description}
+  path={ABOUT_PAGE.path}
+  ogType="website"
+  jsonLd={[
+    aboutPageJsonLd({ title: ABOUT_PAGE.title, description: ABOUT_PAGE.description, url, updated }),
+    personJsonLd(),
+    breadcrumbJsonLd(trail),
+  ]}
+>
+  <Breadcrumbs trail={trail} />
+  <h1>About The Founder Playbook</h1>
+  <p style="color:var(--ink-soft);font-size:.9rem;">Updated {updated}</p>
+
+  <h2>Who writes this</h2>
+
+  <p>
+    I am <a href={GITHUB_PROFILE_URL}>Paulina Xu</a>, founder of
+    <a href={PARENT_URL}>Agentic Fabriq</a>. I write this playbook because the advice I
+    needed as a first-time founder existed in three unhelpful forms: a war story from a
+    company nothing like mine, a framework with no numbers in it, or a thread that stopped
+    exactly where the hard part started.
+  </p>
+
+  <p>
+    So the standard here is narrow. Each guide takes one decision a founder actually faces,
+    lays out the options genuinely on the table, says what each one costs, and ends with
+    something you can act on this week. If a guide cannot do that, it does not ship.
+  </p>
+
+  <h2>The editorial standard</h2>
+
+  <p>
+    <strong>Numbers carry a source.</strong> Where a guide cites a reply rate, a round size,
+    a salary band or a conversion benchmark, it links the organisation that published it,
+    not a blog that restated it. Benchmarks are reported with their sample, because a
+    median across four thousand companies that are nothing like yours is trivia, not
+    guidance.
+  </p>
+
+  <p>
+    <strong>No number is better than a soft one.</strong> Plenty of founder questions have
+    no credible published answer. Where that is the case, the guide says so and gives you
+    the reasoning instead of a confident-sounding figure with nothing behind it.
+  </p>
+
+  <p>
+    <strong>Worked examples are labelled.</strong> Where a guide walks through a scenario
+    with numbers in it, that scenario is a hypothetical composite and is labelled as one.
+    A real company appears by name only where a primary source supports the specific claim
+    being made about it. You should never have to guess whether you are reading a fact or
+    an illustration.
+  </p>
+
+  <p>
+    <strong>It stays evergreen on purpose.</strong> Tool pricing, model capability and
+    market conditions move faster than anyone can maintain. Where a guide depends on a fact
+    with a short shelf life, the fact is isolated and dated rather than woven through the
+    argument, so refreshing it is one edit instead of a rewrite.
+  </p>
+
+  <h2>What this playbook refuses to do</h2>
+
+  <p>
+    There is no newsletter, no email capture, no gate, no analytics and no comment section.
+    Nothing here is trying to convert you. If a guide names a tool, it is because the
+    decision in front of you is about that tool.
+  </p>
+
+  <p>
+    One relationship is worth declaring plainly rather than burying. I run an AI
+    infrastructure company, so the <a href={withBase('/build/')}>Build</a> pillar touches
+    subjects I have commercial interest in. Where a founder topic runs into the engineering
+    problem of giving AI agents access to real systems — mailboxes, repositories,
+    databases — I link the <a href={AF_PLAYBOOK_URL}>Agent Integration Playbook</a>, which
+    is my company's free technical library and the engineering companion to this one. That
+    is a cross-reference, not a recommendation to buy anything, and nothing on this site is
+    gated behind a product.
+  </p>
+
+  <h2>How it is built</h2>
+
+  <p>
+    The site is a static Astro build published from
+    <a href={REPO_URL}>a public repository</a> by GitHub Pages. Every guide is a Markdown
+    file whose frontmatter is validated at build time, and the build refuses to ship on a
+    broken internal link, an orphaned page, a missing social card, a title or description
+    outside its length bounds, or a README index that has drifted from the content. The
+    review bar is written down in <a href={contributing}>CONTRIBUTING.md</a>; the checks
+    themselves are in the repository, so you can read them rather than take my word for it.
+  </p>
+
+  <h2>Found an error?</h2>
+
+  <p>
+    Open an issue on <a href={ISSUES_URL}>the issue tracker</a>. The most useful report
+    names the guide, quotes the claim, and says what the right answer is and where it comes
+    from. Corrections to cited numbers get priority over everything else, because a wrong
+    number here propagates into somebody's actual decision.
+  </p>
+
+  <h2>Licence</h2>
+
+  <p>
+    Prose is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>:
+    quote it, translate it, teach from it, keep the attribution. The code in the repository
+    — the build, the templates, the checks — is
+    <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>, so you can lift
+    the whole engine and publish your own library on it.
+  </p>
+
+  <p>
+    If you are early and reading this at a bad hour, start with
+    <a href={withBase('/sell/')}>founder-led sales</a>. It is the pillar first-time founders
+    postpone longest and regret postponing most. If you already have revenue and the
+    problem is your own week, start with <a href={withBase('/run/')}>the CEO job</a>.
+  </p>
+</BaseLayout>

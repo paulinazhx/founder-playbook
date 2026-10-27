@@ -1,0 +1,117 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PILLARS } from '../lib/pillars';
+import {
+  AF_PLAYBOOK_URL,
+  canonical,
+  personJsonLd,
+  websiteJsonLd,
+  breadcrumbJsonLd,
+  withBase,
+} from '../lib/seo';
+import { HOME_PAGE } from '../lib/site-pages.js';
+
+const guides = await getCollection('guides');
+const byPillar = (slug: string) => guides.filter((g) => g.data.pillar === slug && !g.data.cornerstone);
+const cornerstone = (slug: string) => guides.find((g) => g.data.pillar === slug && g.data.cornerstone);
+
+const PILLAR_INTRO: Record<string, string> = {
+  build:
+    'Build is the question you have before anything exists: what is the first version, what does it refuse to do, what do you run it on, and which of the hundred tools being sold to you is worth the money and the attention it will cost. The cornerstone is the buy-build-skip frame; the guides under it are the specific decisions.',
+  sell:
+    'Sell is the part most first-time founders postpone and then discover is the whole job. One person — you — has to find the people with the problem, get a reply, run the call, pick a number, and close. These guides are that sequence in order, written for the stage where there is no sales team to hand it to.',
+  run:
+    'Run is the job itself, once there are other people in the company. Where your attention goes, how a first round actually gets raised, what to tell the people who funded you, and who to hire before anyone else. The failure mode here is not working too little. It is working hard on the parts someone else could have done.',
+};
+---
+<BaseLayout
+  title={HOME_PAGE.title}
+  description={HOME_PAGE.description}
+  path={HOME_PAGE.path}
+  ogType="website"
+  jsonLd={[
+    websiteJsonLd(),
+    personJsonLd(),
+    breadcrumbJsonLd([{ name: 'The Founder Playbook', url: canonical('/') }]),
+  ]}
+>
+  <h1>The Founder Playbook</h1>
+
+  <p>
+    A free reference for people doing the founder job, written as {guides.length} guides
+    rather than a book, so you can read the one that matches the decision in front of you.
+    No gate, no signup, no newsletter.
+  </p>
+
+  <p>
+    It is written for the stage where you are the product manager, the salesperson, the
+    recruiter and the person who answers support, and where every one of those jobs is
+    being done for the first time. Most founder advice is either a war story that does not
+    transfer or a framework with no numbers in it. These guides try to be the third thing:
+    the decision as it actually presents itself, the options genuinely on the table, what
+    each one costs, and a checklist you can act on this week.
+  </p>
+
+  <p>
+    The library splits three ways, by what you are trying to do rather than by what stage
+    you are at — because nobody knows which stage they are in, but everybody knows whether
+    they are trying to ship something, sell something, or run something.
+    <a href={withBase('/build/')}>Build</a> is what you make and what you make it with.
+    <a href={withBase('/sell/')}>Sell</a> is getting to revenue while you are still the
+    only salesperson. <a href={withBase('/run/')}>Run</a> is the job that is left once
+    other people depend on your decisions.
+  </p>
+
+  <h2>Start here</h2>
+
+  <p>
+    Each pillar has one cornerstone guide carrying the whole argument, and the guides
+    beneath it are reference you can read out of order.
+  </p>
+
+  <ul>
+    {PILLARS.map((pillar) => {
+      const anchor = cornerstone(pillar.slug);
+      return anchor ? (
+        <li>
+          <a href={withBase(`/${pillar.slug}/`)}><strong>{anchor.data.title}</strong></a>
+          {' — '}{anchor.data.description}
+        </li>
+      ) : null;
+    })}
+  </ul>
+
+  {PILLARS.map((pillar) => (
+    <section>
+      <h2><a href={withBase(`/${pillar.slug}/`)}>{pillar.title}</a></h2>
+      <p>{PILLAR_INTRO[pillar.slug]}</p>
+      <ul>
+        {byPillar(pillar.slug).map((guide) => (
+          <li>
+            <a href={withBase(`/${guide.id}/`)}>{guide.data.title}</a>
+            {' — '}{guide.data.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <h2>What this is not</h2>
+
+  <p>
+    It is not a memoir, and it is not a list of things that worked once at one company. Where
+    a guide cites a number — a reply rate, a round size, a conversion benchmark — it links the
+    source that published it, so you can check whether the sample looks anything like you.
+    Where no credible number exists, the guide says so rather than inventing a plausible one.
+  </p>
+
+  <p>
+    It is also not a sales channel. If a guide names a tool, it is because the decision is
+    about that tool. The one exception is declared openly: this playbook is written by the
+    founder of Agentic Fabriq, and where a founder topic runs into the technical problem of
+    giving AI agents access to real systems, it links the
+    <a href={AF_PLAYBOOK_URL}>Agent Integration Playbook</a>, which is the engineering
+    companion to this one. <a href={withBase('/about/')}>More about who writes this</a>.
+  </p>
+</BaseLayout>

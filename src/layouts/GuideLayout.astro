@@ -1,0 +1,70 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getEntry, render } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getPillar } from '../lib/pillars';
+import {
+  canonical,
+  withBase,
+  articleJsonLd,
+  breadcrumbJsonLd,
+  howToJsonLd,
+  faqJsonLd,
+  personJsonLd,
+} from '../lib/seo';
+
+interface Props {
+  entry: CollectionEntry<'guides'>;
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const pillar = getPillar(data.pillar)!;
+const path = `/${entry.id.replace(/\/index$/, '')}/`;
+const url = canonical(path);
+const { Content } = await render(entry);
+
+const trail = data.cornerstone
+  ? [
+      { name: 'The Founder Playbook', url: canonical('/') },
+      { name: data.title, url },
+    ]
+  : [
+      { name: 'The Founder Playbook', url: canonical('/') },
+      { name: pillar.title, url: canonical(`/${pillar.slug}/`) },
+      { name: data.title, url },
+    ];
+
+const related = (
+  await Promise.all(data.relatedGuides.map((id) => getEntry('guides', id)))
+).filter(Boolean) as CollectionEntry<'guides'>[];
+
+// The Person block is emitted top-level as well as embedded in the Article,
+// because a consumer that reads one page in isolation — which is what a rich
+// result validator does — should still resolve the author on its own.
+const jsonLd = [articleJsonLd({ ...data, url }), personJsonLd(), breadcrumbJsonLd(trail)];
+if (data.howTo) {
+  jsonLd.push(howToJsonLd({ title: data.title, description: data.description, url, steps: data.howTo }));
+}
+if (data.faq) {
+  jsonLd.push(faqJsonLd(data.faq));
+}
+---
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  path={path}
+  jsonLd={jsonLd}
+>
+  <Breadcrumbs trail={trail} />
+  <h1>{data.title}</h1>
+  <p style="color:var(--ink-soft);font-size:.9rem;">Updated {data.updated}</p>
+  <Content />
+  <h2>Further reading</h2>
+  <ul>
+    {related.map((guide) => (
+      <li><a href={withBase(`/${guide.id.replace(/\/index$/, '')}/`)}>{guide.data.title}</a></li>
+    ))}
+  </ul>
+</BaseLayout>

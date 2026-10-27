@@ -1,0 +1,51 @@
+---
+import Seo from '../components/Seo.astro';
+import { PILLARS } from '../lib/pillars';
+import { AF_PLAYBOOK_URL, GITHUB_PROFILE_URL, PARENT_URL, REPO_URL, SITE_NAME, withBase } from '../lib/seo';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  jsonLd?: object[];
+  ogType?: string;
+}
+
+const { title, description, path, jsonLd, ogType } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href={withBase('/rss.xml')} />
+    <Seo title={title} description={description} path={path} jsonLd={jsonLd} ogType={ogType} />
+  </head>
+  <body>
+    <header class="site">
+      <a href={withBase('/')}><strong>{SITE_NAME}</strong></a>
+      <nav>
+        {PILLARS.map((pillar) => <a href={withBase(`/${pillar.slug}/`)}>{pillar.title}</a>)}
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer class="site">
+      <p>
+        <a href={withBase('/about/')}>About this playbook</a> — who writes it, the standard
+        every guide is held to, and how to report an error.
+      </p>
+      <p>
+        Written by <a href={GITHUB_PROFILE_URL}>Paulina Xu</a>, founder of
+        <a href={PARENT_URL}>Agentic Fabriq</a>. If you are wiring agents into real systems,
+        the technical companion to this playbook is the
+        <a href={AF_PLAYBOOK_URL}>Agent Integration Playbook</a>.
+      </p>
+      <p>
+        Prose licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>,
+        code <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a>.
+        <a href={REPO_URL}>Improve this page on GitHub</a>.
+      </p>
+    </footer>
+  </body>
+</html>
