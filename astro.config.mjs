@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { satteri } from '@astrojs/markdown-satteri';
+import { baseLinks } from './src/lib/base-links-plugin.mjs';
 
 // `site` is the account origin and `base` is the repository path, because this
 // deploys as a GitHub project page at paulinazhx.github.io/founder-playbook/.
@@ -23,5 +25,9 @@ export default defineConfig({
   ],
   markdown: {
     shikiConfig: { theme: 'github-dark', wrap: false },
+    // Guides write internal links as `/sell/pricing/`; this adds the base.
+    // `hastPlugins` is Satteri's hook — `markdown.rehypePlugins` belongs to the
+    // legacy unified processor, which Astro 7 no longer installs by default.
+    processor: satteri({ hastPlugins: [baseLinks] }),
   },
 });
