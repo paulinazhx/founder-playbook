@@ -1,14 +1,25 @@
 ---
+import { SITE_ORIGIN } from '../lib/site-urls.js';
+
 interface Props {
+  /**
+   * The same trail that goes into the BreadcrumbList JSON-LD, whose `item`
+   * values must be absolute. The rendered links should not be: an absolute
+   * self-link costs a redirect on some hosts and reads as external to a link
+   * checker, so on-site URLs are reduced to a path here. The base prefix is
+   * already in them, because they came from `canonical()`.
+   */
   trail: Array<{ name: string; url: string }>;
 }
 const { trail } = Astro.props;
+
+const href = (url: string) => (url.startsWith(SITE_ORIGIN) ? url.slice(SITE_ORIGIN.length) : url);
 ---
 <nav aria-label="Breadcrumb">
   <ol style="list-style:none;display:flex;gap:.5rem;padding:0;margin:0 0 1rem;font-size:.9rem;">
     {trail.map((crumb, index) => (
       <li>
-        {index < trail.length - 1 ? <a href={crumb.url}>{crumb.name}</a> : <span>{crumb.name}</span>}
+        {index < trail.length - 1 ? <a href={href(crumb.url)}>{crumb.name}</a> : <span>{crumb.name}</span>}
         {index < trail.length - 1 && <span aria-hidden="true"> / </span>}
       </li>
     ))}

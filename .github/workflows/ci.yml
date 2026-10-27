@@ -1,0 +1,22 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      # `npm run verify` is build + tests + markdown lint + internal links + og
+      # cards + the generated README index. External links, including every
+      # primary-source citation, are deliberately NOT checked here -- see
+      # scripts/check-links-external.mjs for why.
+      - run: npm run verify
