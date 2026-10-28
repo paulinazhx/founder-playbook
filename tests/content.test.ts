@@ -25,7 +25,7 @@ const ids = new Set(guides.map((g) => g.id));
 
 describe('the guide collection', () => {
   it('holds twelve guides', () => {
-    expect(guides.length).toBe(12);
+    expect(guides.length).toBe(18);
   });
 
   it('passes the frontmatter schema', () => {

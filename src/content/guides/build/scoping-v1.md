@@ -120,6 +120,8 @@ Two questions, in order.
 
 Two honest caveats, because this number gets cargo-culted. At ten users, 40% is four people and carries no statistical weight whatsoever. And Superhuman's run at it was an email client sold to individuals, which is a very different shape from enterprise software with procurement cycles. What transfers is not the threshold. It is the method: ask the question, then **ignore the average and read the segments**. The useful output is which kind of user says *very disappointed*, because that tells you who the product is actually for — which, nine times out of ten, is narrower than the segment you wrote in step 1.
 
+Once the first version is live and requests start arriving, the discipline changes from refusing in advance to sorting what people ask for. That is [deciding what to build next](/founder-playbook/build/what-to-build-next/), and the refusal list carries straight over into it.
+
 ## Worked example
 
 *A hypothetical composite. Numbers are invented to be plausible; no company described here exists.*

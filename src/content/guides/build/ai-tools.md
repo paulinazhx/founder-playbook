@@ -80,6 +80,8 @@ The top-left box is where the money is, and it is worth being specific about wha
 
 **Writing you would have written anyway.** Investor updates, job descriptions, support macros, documentation, the first pass at a landing page. You know what you meant, so you can see instantly when the draft does not say it. The saving is real because the review is fast. This is also the category where founders most often *over*-delegate: an [investor update](/founder-playbook/run/investor-updates/) written entirely by a tool reads exactly like one, and the readers you care about will notice.
 
+**Deciding what to build** is deliberately not on this list — see [deciding what to build next](/founder-playbook/build/what-to-build-next/) for why the input that matters there is which customers are blocked, which no tool knows.
+
 **Research synthesis with the sources attached.** Reading fifteen pages to answer one question is work AI genuinely absorbs, *provided* it hands you the links so verification is a click. Synthesis without citations is the expensive-verification case wearing the cheap one's clothes.
 
 **Throwaway and internal code.** Scripts, prototypes, data migrations, internal dashboards. Low stakes, immediately testable, discarded afterwards. Note that this is the mirror image of METR's setting: they measured experienced engineers in mature codebases they knew deeply, which is where the human has the most context and the model the least. In a throwaway script nobody has context, and the asymmetry disappears.

@@ -9,7 +9,7 @@ const guides = readGuides();
 
 describe('the generated readme index', () => {
   it('reads every guide out of the frontmatter', () => {
-    expect(guides.length).toBe(12);
+    expect(guides.length).toBe(18);
     expect(guides.filter((guide) => guide.cornerstone).length).toBe(3);
   });
 
@@ -79,7 +79,7 @@ describe('the generated readme index', () => {
 
   it('catches the guide count in the opening sentence going stale', () => {
     expect(checkCount(README, guides.length)).toBeNull();
-    expect(checkCount(README, guides.length + 1)).toMatch(/README.md says "Twelve guides"/);
+    expect(checkCount(README, guides.length + 1)).toMatch(/README.md says "Eighteen guides"/);
     expect(checkCount('no such sentence here', guides.length)).toMatch(/no longer states a guide count/);
   });
 });

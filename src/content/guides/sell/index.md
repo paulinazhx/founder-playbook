@@ -96,6 +96,8 @@ Where the names come from, in descending order of usefulness: people you already
 
 **Promise something you can deliver by hand.** If the product does half of it, do the other half yourself. Manually, over email, at 11pm if necessary. This is not cheating, it is the correct approach, and the argument is in [scoping a first version](/founder-playbook/build/scoping-v1/): doing it by hand is how you learn what the automated version must handle. It also means the thing you are testing is "will someone pay for this outcome" rather than "is my software finished," and only the first question matters yet.
 
+Keeping the customers you win is its own job, and at this scale it is yours — [churn and renewals](/founder-playbook/sell/churn-and-renewals/) covers the part that happens after the signature.
+
 **Charge money.** Even a small amount. The transition from free to paid is where you find out whether the problem is real, and it is a different conversation entirely — free pilots generate enthusiasm from people with no stake. Discount freely; the price is not the information yet. What matters is that a budget holder agreed to move money. [Pricing](/founder-playbook/sell/pricing/) covers what the number should actually be.
 
 **Track it in a spreadsheet.** One row per company. Who, how you reached them, the problem **in their words**, where it stalled, what they do instead today, and the date of the next concrete step. Six columns. A CRM here is premature: its fields encode a stage model you have not earned, and you will start managing the model instead of the deals. The tool-stack argument for this is in [buy, build, or skip](/founder-playbook/build/).

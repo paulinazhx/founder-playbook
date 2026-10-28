@@ -125,6 +125,8 @@ You will price too low. Here is the cheap correction.
 
 **When you do move existing customers:** long notice, a reason tied to what you have actually added since they signed, and an option to lock the old rate by committing to a longer term. Expect some churn. The churn is mostly concentrated in the segment that was only ever there for the price, which is the segment you were trying to stop attracting.
 
+A price increase is also the fastest lever available when cash is short, and the one founders reach for last. [Extending runway](/founder-playbook/run/runway/) puts it in order against the cost cuts.
+
 **Do not raise prices to fix a fundraising narrative.** It is a visible temptation when revenue multiples are the metric being discussed, and it produces a cohort of unhappy customers precisely when you need references. [Raising a first round](/founder-playbook/run/fundraising/) covers what investors actually read, and a hurried price rise is legible to them as exactly what it is.
 
 ## Worked example

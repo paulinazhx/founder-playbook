@@ -142,7 +142,7 @@ Run the same analysis you would on lost sales deals, because it is the same prob
 
 **"We don't believe the market is big enough."** Usually unfixable in this raise and worth taking seriously rather than arguing with, because it is a judgement about the thing you cannot change quickly.
 
-And the option that deserves more respect than it gets: **get to default alive on revenue**. Cut costs, raise prices, and reach the point where the company funds itself. That converts fundraising from a necessity into an option, which is a strictly better position to raise from — and the arithmetic of failure is unambiguous about why. [CB Insights' March 2026 analysis of 431 failed VC-backed companies](https://www.cbinsights.com/research/report/startup-failure-reasons-top/) found **70%** ran out of capital, while noting that capital exhaustion "is almost always the final cause of death, not the root problem."
+And the option that deserves more respect than it gets: **get to default alive on revenue**, which [extending runway](/founder-playbook/run/runway/) sets out as a sequence rather than an aspiration. Cut costs, raise prices, and reach the point where the company funds itself. That converts fundraising from a necessity into an option, which is a strictly better position to raise from — and the arithmetic of failure is unambiguous about why. [CB Insights' March 2026 analysis of 431 failed VC-backed companies](https://www.cbinsights.com/research/report/startup-failure-reasons-top/) found **70%** ran out of capital, while noting that capital exhaustion "is almost always the final cause of death, not the root problem."
 
 ## Worked example
 

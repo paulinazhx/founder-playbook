@@ -76,7 +76,7 @@ And the sample is large-company chief executives, not founders. Their constraint
 | --- | --- | --- |
 | **Direction** | What the company is doing this year and, crucially, what it has decided not to do. Written down, repeated until it is boring. | It is the one statement everyone else's decisions are made against. Delegated, it fragments into several directions nobody notices are different. |
 | **Money** | How much there is, how long it lasts, what it is being spent on, and when the next raise starts. See [raising a first round](/founder-playbook/run/fundraising/). | Runway is the constraint every other decision sits inside. A founder who does not know the number to the week cannot make any other decision correctly. |
-| **The top layer** | Hiring, and firing, the people who themselves own functions. | Each one changes what the company is capable of and what it is like to work there. Mistakes here compound through everyone they hire. [First hires](/founder-playbook/run/first-hires/) covers the decisions. |
+| **The top layer** | Hiring and firing the people who own functions — and, at the very start, agreeing [co-founder equity and vesting](/founder-playbook/run/cofounder-equity/). | Each one changes what the company is capable of and what it is like to work there. Mistakes here compound through everyone they hire. [First hires](/founder-playbook/run/first-hires/) covers the decisions. |
 | **The last decision** | The call on things that are genuinely contested or genuinely irreversible. | Someone has to be last, or decisions circulate. This is the duty most often confused with "all decisions." |
 
 Early, there is a fifth, and pretending otherwise causes real damage: **you sell**. Until the motion can be written on one page and handed over — the test in [founder-led sales](/founder-playbook/sell/) — selling is a direction-setting activity wearing a sales hat, because it is where you find out what the company should be doing.
@@ -129,7 +129,7 @@ Worth stating positively, because the rest of this guide is subtractive.
 
 **Say the direction out loud, repeatedly, past the point of boredom.** You will tire of it long before the company has absorbed it. The signal that it has landed is hearing someone else use your sentence in a decision you were not in.
 
-**Know the money.** Runway to the week. Not a spreadsheet someone maintains — the number, in your head, now. Every other decision is made inside that constraint whether or not you are aware of it.
+**Know the money.** Runway to the week, computed from bank statements rather than a model — [extending runway](/founder-playbook/run/runway/) has the arithmetic and the order to cut in. Not a spreadsheet someone maintains — the number, in your head, now. Every other decision is made inside that constraint whether or not you are aware of it.
 
 **Decide the contested things.** Not all things. The ones that are genuinely contested, where reasonable people have looked at the same facts and disagree. That is the residue after everything else is delegated, and it is the actual job.
 

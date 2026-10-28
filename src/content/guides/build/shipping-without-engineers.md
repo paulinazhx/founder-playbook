@@ -186,6 +186,10 @@ Before the first customer pays:
 **Cause:** Usually it is, partly — untested code is slower to extend than to replace, which is a real engineering fact and not a preference.
 **Fix:** Ask which parts hold customer data and must be migrated rather than rewritten. Rewriting the rest is often correct and cheap; the data is the part to defend.
 
+**Symptom:** Customers are leaving and never reported a problem.
+**Cause:** Something failed quietly — a truncated export, a stalled sync, a wrong number. Founder-built software is especially prone to this, and it generates no complaints.
+**Fix:** Check logs for unreported failures and alert on them. [Churn and renewals](/founder-playbook/sell/churn-and-renewals/) covers why this class dominates early churn.
+
 **Symptom:** You are spending more time operating the software than talking to customers.
 **Cause:** You chose a route whose operating cost lands on the person who should be selling.
 **Fix:** Buy down the operating cost — contract engineer two days a week is usually enough — before buying more features. The constraint is your attention, which is the argument in [the tool stack](/founder-playbook/build/).

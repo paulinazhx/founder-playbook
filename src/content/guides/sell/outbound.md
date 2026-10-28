@@ -134,7 +134,7 @@ You are almost certainly below 5,000 a day, so the volume rules do not formally 
 
 Three cases, worth checking before the effort rather than after.
 
-**The arithmetic does not close.** Deal size too small, or meetings needed too many, for the volume you can personally sustain. Then the channel is wrong this quarter — look at inbound, partnerships, communities, or events.
+**The arithmetic does not close.** Deal size too small, or meetings needed too many, for the volume you can personally sustain. Then the channel is wrong this quarter — [inbound](/founder-playbook/sell/inbound/) is the usual alternative, and it pays out in months rather than weeks.
 
 **The buyer is not reachable by email.** Some roles do not read their own inbox; some industries live on the phone or in person. This is knowable by asking three people in the role how they would want to be contacted.
 

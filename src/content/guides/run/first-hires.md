@@ -119,6 +119,8 @@ Ask for a former manager, not a peer, and ask the candidate to make the introduc
 
 Two honest problems: you cannot verify the market, and you have very little money.
 
+If the person in question is a co-founder rather than an employee, this is the wrong guide — see [co-founder equity, vesting and the agreement](/founder-playbook/run/cofounder-equity/), where the instrument is vesting rather than a band.
+
 On benchmarks, the position is similar to [pricing](/founder-playbook/sell/pricing/). There is no reliable public dataset for what a first hire at a seven-person pre-Series-A company should receive, and most circulating figures are restatements. The credible sources are cap-table and payroll aggregators publishing from their own data, they update continuously, and they generally do not permit automated access — so look them up yourself at the time you need them rather than trusting a number in an article, including this one.
 
 What you can control is **internal consistency**, which matters more than being slightly off an unverifiable market rate.
