@@ -50,7 +50,7 @@ faq:
 
 You have employees. Decisions route to you that you do not think should. You end weeks unable to say what you did, and you suspect that the things you were busy with were not the things that mattered. Maybe you also notice you are doing a version of your old job, well, while the actual job goes unattended.
 
-Skip this if you are still pre-employees — your job is almost entirely product and selling, and [founder-led sales](/sell/) is the better use of the hour. Skip it too if your question is specifically who to hire next, which is [first hires](/run/first-hires/).
+Skip this if you are still pre-employees — your job is almost entirely product and selling, and [founder-led sales](/founder-playbook/sell/) is the better use of the hour. Skip it too if your question is specifically who to hire next, which is [first hires](/founder-playbook/run/first-hires/).
 
 ## The problem
 
@@ -75,11 +75,11 @@ And the sample is large-company chief executives, not founders. Their constraint
 | Duty | What it means concretely | Why only you |
 | --- | --- | --- |
 | **Direction** | What the company is doing this year and, crucially, what it has decided not to do. Written down, repeated until it is boring. | It is the one statement everyone else's decisions are made against. Delegated, it fragments into several directions nobody notices are different. |
-| **Money** | How much there is, how long it lasts, what it is being spent on, and when the next raise starts. See [raising a first round](/run/fundraising/). | Runway is the constraint every other decision sits inside. A founder who does not know the number to the week cannot make any other decision correctly. |
-| **The top layer** | Hiring, and firing, the people who themselves own functions. | Each one changes what the company is capable of and what it is like to work there. Mistakes here compound through everyone they hire. [First hires](/run/first-hires/) covers the decisions. |
+| **Money** | How much there is, how long it lasts, what it is being spent on, and when the next raise starts. See [raising a first round](/founder-playbook/run/fundraising/). | Runway is the constraint every other decision sits inside. A founder who does not know the number to the week cannot make any other decision correctly. |
+| **The top layer** | Hiring, and firing, the people who themselves own functions. | Each one changes what the company is capable of and what it is like to work there. Mistakes here compound through everyone they hire. [First hires](/founder-playbook/run/first-hires/) covers the decisions. |
 | **The last decision** | The call on things that are genuinely contested or genuinely irreversible. | Someone has to be last, or decisions circulate. This is the duty most often confused with "all decisions." |
 
-Early, there is a fifth, and pretending otherwise causes real damage: **you sell**. Until the motion can be written on one page and handed over — the test in [founder-led sales](/sell/) — selling is a direction-setting activity wearing a sales hat, because it is where you find out what the company should be doing.
+Early, there is a fifth, and pretending otherwise causes real damage: **you sell**. Until the motion can be written on one page and handed over — the test in [founder-led sales](/founder-playbook/sell/) — selling is a direction-setting activity wearing a sales hat, because it is where you find out what the company should be doing.
 
 Everything else — product detail, hiring below the top layer, operations, support, the actual code, the actual designs, most of the recruiting process, nearly all meetings you did not call — is delegable in principle. "In principle" is doing real work in that sentence: you may be doing them because nobody else exists yet, which is fine and temporary. The problem is doing them because they are comfortable, which is neither.
 
@@ -135,7 +135,7 @@ Worth stating positively, because the rest of this guide is subtractive.
 
 **Keep a direct line to customers.** Permanently, at low volume. A few calls a month after you have hired sellers. Not for the revenue — to keep your own perception unfiltered. A founder whose only information about the market arrives through a summary loses the ability to notice it changing, and that loss is invisible until it is expensive.
 
-**Tell the truth to the people who funded you.** Covered in [investor updates](/run/investor-updates/), and it belongs on this list because it is unpleasant and delegable-looking and neither.
+**Tell the truth to the people who funded you.** Covered in [investor updates](/founder-playbook/run/investor-updates/), and it belongs on this list because it is unpleasant and delegable-looking and neither.
 
 ## Worked example
 
@@ -164,11 +164,11 @@ Forty hours of code review is the headline. He is a good engineer and it is the 
 
 *Direction.* Uses four of the reclaimed hours to write a one-page statement of what the company is doing this year and three things it is explicitly not doing. Reads it at the all-hands. Nobody reacts much. Eight weeks later he hears a salesperson decline a deal using his third sentence, in a conversation he was not part of, which is the only evidence that direction has landed.
 
-*Money.* Books thirty minutes every Monday with the spreadsheet open. Within three weeks he knows runway to the week and finds one surprise: a contract auto-renewing in February at nearly double, which he cancels — the specific failure mode [the tool stack](/build/) describes.
+*Money.* Books thirty minutes every Monday with the spreadsheet open. Within three weeks he knows runway to the week and finds one surprise: a contract auto-renewing in February at nearly double, which he cancels — the specific failure mode [the tool stack](/founder-playbook/build/) describes.
 
 **Month three.** 138 recorded hours. None-of-the-above is down to 51. Direction and money are up to 11 combined. He has not become less busy; he has become busy with different things, and the difference is that the four duties are now attended.
 
-**What he got wrong.** He also tried to delegate the first-call sales conversations, to a salesperson hired two months earlier, and took those back after five weeks. The deals were not closing, and the reason was that the motion was not yet describable — exactly the failure [founder-led sales](/sell/) warns about. Delegating the four duties too early is a different mistake from delegating comfort work too late, and he made both in the same quarter.
+**What he got wrong.** He also tried to delegate the first-call sales conversations, to a salesperson hired two months earlier, and took those back after five weeks. The deals were not closing, and the reason was that the motion was not yet describable — exactly the failure [founder-led sales](/founder-playbook/sell/) warns about. Delegating the four duties too early is a different mistake from delegating comfort work too late, and he made both in the same quarter.
 
 ## Checklist
 

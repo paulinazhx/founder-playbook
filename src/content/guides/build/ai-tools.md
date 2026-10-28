@@ -49,13 +49,13 @@ faq:
 
 You are a founder deciding whether some AI product deserves a place in how your company works, and you are getting two useless signals: vendor claims pitched at enterprise transformation, and a general atmosphere suggesting you are behind. You want to know what genuinely comes off your plate.
 
-Skip this if your question is specifically "can I build my product without engineers" — that is [shipping without engineers](/build/shipping-without-engineers/), which is a narrower and more answerable question. Skip it too if you are choosing between two specific models for a feature inside your product; that is engineering work with its own benchmarks, not a stack decision.
+Skip this if your question is specifically "can I build my product without engineers" — that is [shipping without engineers](/founder-playbook/build/shipping-without-engineers/), which is a narrower and more answerable question. Skip it too if you are choosing between two specific models for a feature inside your product; that is engineering work with its own benchmarks, not a stack decision.
 
 ## The problem
 
 Every generation of tooling gets sold on the same premise and fails on the same detail. The premise is that the tool does the job. The detail is that the job was never the visible part.
 
-Take a founder writing outbound email. The visible job is producing fifty personalised emails. An AI tool does that in four minutes, and the demo is genuinely impressive. The actual job was: work out which fifty companies have the problem, find the person who owns it, understand enough about their situation to say something not obviously generic, write something that does not read as automated, and send it from a domain that will not get burned. The tool did step five. Steps one through four are research and judgment, step six is infrastructure, and the thing you can now do fifty times faster is the one step that was never the constraint. [Cold outbound](/sell/outbound/) goes into what the real constraint is, and it is list quality, which no current tool fixes for you.
+Take a founder writing outbound email. The visible job is producing fifty personalised emails. An AI tool does that in four minutes, and the demo is genuinely impressive. The actual job was: work out which fifty companies have the problem, find the person who owns it, understand enough about their situation to say something not obviously generic, write something that does not read as automated, and send it from a domain that will not get burned. The tool did step five. Steps one through four are research and judgment, step six is infrastructure, and the thing you can now do fifty times faster is the one step that was never the constraint. [Cold outbound](/founder-playbook/sell/outbound/) goes into what the real constraint is, and it is list quality, which no current tool fixes for you.
 
 This is not an argument that the tools are useless. It is an argument that the unit of analysis is wrong. People evaluate AI tools by asking "can it do this?" and the answer is now usually yes, at some quality. The question that predicts whether your week changes is: **what fraction of the loop does it close, and what does closing the rest cost me?**
 
@@ -78,7 +78,7 @@ Sort any candidate tool on two axes. How much of the loop does it close, and how
 
 The top-left box is where the money is, and it is worth being specific about what lives there for a founder in 2026.
 
-**Writing you would have written anyway.** Investor updates, job descriptions, support macros, documentation, the first pass at a landing page. You know what you meant, so you can see instantly when the draft does not say it. The saving is real because the review is fast. This is also the category where founders most often *over*-delegate: an [investor update](/run/investor-updates/) written entirely by a tool reads exactly like one, and the readers you care about will notice.
+**Writing you would have written anyway.** Investor updates, job descriptions, support macros, documentation, the first pass at a landing page. You know what you meant, so you can see instantly when the draft does not say it. The saving is real because the review is fast. This is also the category where founders most often *over*-delegate: an [investor update](/founder-playbook/run/investor-updates/) written entirely by a tool reads exactly like one, and the readers you care about will notice.
 
 **Research synthesis with the sources attached.** Reading fifteen pages to answer one question is work AI genuinely absorbs, *provided* it hands you the links so verification is a click. Synthesis without citations is the expensive-verification case wearing the cheap one's clothes.
 

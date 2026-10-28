@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import { satteri } from '@astrojs/markdown-satteri';
-import { baseLinks } from './src/lib/base-links-plugin.mjs';
 
 // `site` is the account origin and `base` is the repository path, because this
 // deploys as a GitHub project page at paulinazhx.github.io/founder-playbook/.
@@ -25,9 +23,17 @@ export default defineConfig({
   ],
   markdown: {
     shikiConfig: { theme: 'github-dark', wrap: false },
-    // Guides write internal links as `/sell/pricing/`; this adds the base.
-    // `hastPlugins` is Satteri's hook — `markdown.rehypePlugins` belongs to the
-    // legacy unified processor, which Astro 7 no longer installs by default.
-    processor: satteri({ hastPlugins: [baseLinks] }),
+    // No Markdown plugins. Astro 7's default processor (Satteri) accepts
+    // `mdastPlugins` and `hastPlugins` in its options and this release does not
+    // invoke either, which was verified directly against `createRenderer`. A
+    // link-rewriting plugin therefore silently did nothing and every in-body
+    // cross-link shipped without the base prefix, 404ing in production while
+    // the internal link check passed.
+    //
+    // So guides write internal links WITH the base — `/founder-playbook/sell/`
+    // — and `scripts/check-links.mjs` now rejects an internal link that lacks
+    // the prefix rather than tolerating both forms. The prefix is hard-coded in
+    // content, which is the cost of not having a transform; the check is what
+    // makes that safe.
   },
 });

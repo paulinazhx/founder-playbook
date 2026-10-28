@@ -49,7 +49,7 @@ faq:
 
 You have a problem you believe in and a list of things the product should do that keeps growing. Every item on it has a reason. You are trying to work out where the line goes, and every time you draw it someone — often you — produces a plausible argument for moving it ten feet out.
 
-Skip this if you already have users completing the core job and the question is which of three validated improvements to do next. That is prioritisation, and it is a much easier problem because you have evidence. Skip it too if your constraint is "I cannot build any of this" — that is [shipping without engineers](/build/shipping-without-engineers/).
+Skip this if you already have users completing the core job and the question is which of three validated improvements to do next. That is prioritisation, and it is a much easier problem because you have evidence. Skip it too if your constraint is "I cannot build any of this" — that is [shipping without engineers](/founder-playbook/build/shipping-without-engineers/).
 
 ## The problem
 
@@ -71,7 +71,7 @@ A refusal list is specific, public, and dated. Not "we'll keep it simple" — th
 
 > The first version supports one user per account, no teams or permissions. It works only with Postgres, not MySQL or anything else. It has no mobile app and no mobile layout. There is no API. Data import is a CSV you email us and we load by hand. Billing is an invoice we send manually. If you need any of the above, we are not for you yet, and we will say so.
 
-This does four things at once. It makes every future request a comparison against a written position rather than an argument from first principles. It tells you what to say on a sales call, confidently, which is the thing the fear was about. It tells a prospect whether to disqualify themselves early, which is a favour to both of you — see [discovery calls](/sell/discovery-and-demos/) for why early disqualification is a feature. And it makes the one thing you *are* doing legible, to you and everyone else.
+This does four things at once. It makes every future request a comparison against a written position rather than an argument from first principles. It tells you what to say on a sales call, confidently, which is the thing the fear was about. It tells a prospect whether to disqualify themselves early, which is a favour to both of you — see [discovery calls](/founder-playbook/sell/discovery-and-demos/) for why early disqualification is a feature. And it makes the one thing you *are* doing legible, to you and everyone else.
 
 The refusal list is also where you discover you do not actually know who the product is for. If you cannot write "we are not for you yet" without flinching, the segment is not defined, and no amount of feature work will fix that.
 

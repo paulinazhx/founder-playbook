@@ -40,7 +40,7 @@ faq:
 ## TL;DR
 
 - Hire against a **trigger**, not a role name. The trigger is a queue you cannot clear, a skill the company genuinely lacks, or a function with no owner. A title on an imagined org chart is not a reason.
-- **The botched hire is the early salesperson.** If you cannot write the motion on one page — target, opener, three objections, three answers — your new hire is doing discovery on commission, which almost nobody does well. See [founder-led sales](/sell/).
+- **The botched hire is the early salesperson.** If you cannot write the motion on one page — target, opener, three objections, three answers — your new hire is doing discovery on commission, which almost nobody does well. See [founder-led sales](/founder-playbook/sell/).
 - Replace the interview with a **paid work sample**. Three to six hours of the real work, judged on output. Unstructured interviews mostly measure whether you enjoy the conversation.
 - There is **no reliable public benchmark** for early-stage equity. Be internally consistent instead: a written band structure applied to everyone, with strike price, vesting and the preference stack stated plainly.
 - Write **what good looks like at 30, 60 and 90 days** and give it to them on day one. Firing fast is only defensible if the standard was stated; otherwise the failure is yours.
@@ -49,7 +49,7 @@ faq:
 
 You are making your first few hires, or you have made one or two and at least one is not going well. You do not have a recruiter, a process, or any calibration about what good looks like for a role you have never done.
 
-Skip this if you have a head of people and a structured loop. Skip it too if your question is whether you can avoid hiring by building differently, which is [shipping without engineers](/build/shipping-without-engineers/).
+Skip this if you have a head of people and a structured loop. Skip it too if your question is whether you can avoid hiring by building differently, which is [shipping without engineers](/founder-playbook/build/shipping-without-engineers/).
 
 ## The problem
 
@@ -81,13 +81,13 @@ Two things to notice.
 
 **Nothing on that list is a "head of" until the last row.** Seniority is a response to coordination cost. Hiring it before the coordination cost exists means paying for judgement you will overrule, which is the shape of the senior-hire failure.
 
-**Fractional deserves more consideration than it gets.** For finance, compliance, security, data and regulatory work, a genuinely senior person for a day a week often outperforms a full-time mid-level hire, and the commitment is reversible. It is the hiring equivalent of the rule in [the tool stack](/build/): prefer the reversible option until you can name why it is insufficient.
+**Fractional deserves more consideration than it gets.** For finance, compliance, security, data and regulatory work, a genuinely senior person for a day a week often outperforms a full-time mid-level hire, and the commitment is reversible. It is the hiring equivalent of the rule in [the tool stack](/founder-playbook/build/): prefer the reversible option until you can name why it is insufficient.
 
 ## The one founders botch
 
 Hiring a salesperson too early. It is the most expensive avoidable mistake at this stage and it happens for an understandable reason: selling is the most uncomfortable part of the job and the one whose absence is most visible in the numbers.
 
-The precondition is the describability test from [founder-led sales](/sell/). You can write, on one page: who to contact and why they have the problem; what to say first; the three objections in order of frequency; the answer to each; the price and when to say it; and what qualified means specifically enough that someone else could apply it. Then you hand the page to one person and **they win a deal you were not in**.
+The precondition is the describability test from [founder-led sales](/founder-playbook/sell/). You can write, on one page: who to contact and why they have the problem; what to say first; the three objections in order of frequency; the answer to each; the price and when to say it; and what qualified means specifically enough that someone else could apply it. Then you hand the page to one person and **they win a deal you were not in**.
 
 If that test has not passed, the hire does not work, and the mechanism is worth understanding rather than just accepting. A salesperson's skill is executing a known motion efficiently. Discovery — finding out who the buyer is, what language works, which objections are real — is a different skill, it is slower, and it is nearly impossible to do while carrying a quota, because the quota rewards closing whatever is in front of you rather than learning what should be. So you get activity, a pipeline of poorly qualified deals, and a quarter later a conclusion that the hire was wrong when the actual error was in the brief.
 
@@ -95,7 +95,7 @@ It also costs you twice. You pay the salary and the ramp, and you forgo the quar
 
 The honest version of the temptation: founders hire salespeople to stop having to sell. If that is the reason, the hire will not fix it — you will be doing the same calls plus managing someone.
 
-A runner-up, worth naming: the **early senior marketing hire**, made because growth feels like a function rather than a consequence. At pre-product-market-fit the thing that moves is usually the words on the site and who you are talking to, both of which are founder work and both of which are covered by [discovery calls](/sell/discovery-and-demos/) and [outbound](/sell/outbound/).
+A runner-up, worth naming: the **early senior marketing hire**, made because growth feels like a function rather than a consequence. At pre-product-market-fit the thing that moves is usually the words on the site and who you are talking to, both of which are founder work and both of which are covered by [discovery calls](/founder-playbook/sell/discovery-and-demos/) and [outbound](/founder-playbook/sell/outbound/).
 
 ## Interviewing with no process
 
@@ -119,13 +119,13 @@ Ask for a former manager, not a peer, and ask the candidate to make the introduc
 
 Two honest problems: you cannot verify the market, and you have very little money.
 
-On benchmarks, the position is similar to [pricing](/sell/pricing/). There is no reliable public dataset for what a first hire at a seven-person pre-Series-A company should receive, and most circulating figures are restatements. The credible sources are cap-table and payroll aggregators publishing from their own data, they update continuously, and they generally do not permit automated access — so look them up yourself at the time you need them rather than trusting a number in an article, including this one.
+On benchmarks, the position is similar to [pricing](/founder-playbook/sell/pricing/). There is no reliable public dataset for what a first hire at a seven-person pre-Series-A company should receive, and most circulating figures are restatements. The credible sources are cap-table and payroll aggregators publishing from their own data, they update continuously, and they generally do not permit automated access — so look them up yourself at the time you need them rather than trusting a number in an article, including this one.
 
 What you can control is **internal consistency**, which matters more than being slightly off an unverifiable market rate.
 
 Before the first offer, write down a simple structure: two or three salary bands with a rough seniority definition, and an equity range per band. Apply it to everyone. Early hires talk to each other, and an inconsistency between hire two and hire four is discovered, remembered, and expensive in a way that being 10% below market is not.
 
-When you make an equity offer, state plainly: the number of options, the total shares outstanding so the percentage is computable, the strike price, the vesting schedule and cliff, what happens on a sale, and — the one most founders omit — that there is a **preference stack ahead of common shares** and roughly what it is. A candidate who later discovers that their options were worth nothing in a modest exit, and that nobody mentioned the preference, has learned something about you rather than about equity. The mechanics are in [raising a first round](/run/fundraising/).
+When you make an equity offer, state plainly: the number of options, the total shares outstanding so the percentage is computable, the strike price, the vesting schedule and cliff, what happens on a sale, and — the one most founders omit — that there is a **preference stack ahead of common shares** and roughly what it is. A candidate who later discovers that their options were worth nothing in a modest exit, and that nobody mentioned the preference, has learned something about you rather than about equity. The mechanics are in [raising a first round](/founder-playbook/run/fundraising/).
 
 And say what the offer is not: it is a lottery ticket with a strike price, not deferred compensation. Candidates who need certainty should take the salary and that is a legitimate choice.
 
@@ -191,7 +191,7 @@ After:
 
 - [ ] A specific conversation against the written expectations at 30 and 60 days.
 - [ ] A decision at 90 days.
-- [ ] The hire mentioned in the next [investor update](/run/investor-updates/), including if it went badly.
+- [ ] The hire mentioned in the next [investor update](/founder-playbook/run/investor-updates/), including if it went badly.
 
 ## Failure modes
 

@@ -50,7 +50,7 @@ faq:
 
 You have something people might pay for and no idea what to charge. There is no established market price because the thing is new, or because the people who do something like it do it as a service, or because the incumbent is a spreadsheet. You are about to pick a number mostly by feel.
 
-Skip this if you are in a market with published list prices and your question is where to sit within a known range — that is positioning, and it is a much easier problem with far more available evidence. Skip it too if your question is whether to charge at all: charge. [Founder-led sales](/sell/) covers why the free-to-paid transition is where you find out whether the problem is real.
+Skip this if you are in a market with published list prices and your question is where to sit within a known range — that is positioning, and it is a much easier problem with far more available evidence. Skip it too if your question is whether to charge at all: charge. [Founder-led sales](/founder-playbook/sell/) covers why the free-to-paid transition is where you find out whether the problem is real.
 
 ## The problem
 
@@ -79,7 +79,7 @@ Four candidate anchors. Only the first two are any use early.
 | **Competitor list prices** | Public pricing pages. | **Rarely.** If you had real comparables you would not be reading this. Adjacent products anchor the buyer wrongly and drag you toward their price metric. |
 | **Your costs plus a margin** | Infrastructure, your time. | **No.** Irrelevant to the buyer, and at startup scale it produces absurdly low numbers because your costs are tiny and your value may not be. |
 
-The method is one question asked properly, and it is the same question that qualifies the deal: **what does this cost you today, in money or hours?** Ask, then be silent. Do not supply a number — a buyer who agrees with your estimate has been polite, not informative, and [discovery calls](/sell/discovery-and-demos/) covers why that politeness quietly corrupts a forecast.
+The method is one question asked properly, and it is the same question that qualifies the deal: **what does this cost you today, in money or hours?** Ask, then be silent. Do not supply a number — a buyer who agrees with your estimate has been polite, not informative, and [discovery calls](/founder-playbook/sell/discovery-and-demos/) covers why that politeness quietly corrupts a forecast.
 
 Then price at a fraction of that number, where the fraction is visible to the buyer. If the status quo costs them £1,800 a month in someone's time, £400 a month is an easy comparison they can make in their head and defend to their boss. £1,500 is a negotiation about whether your estimate was right.
 
@@ -107,7 +107,7 @@ Early, charge **one flat price for one package**. Per month or per year, same pr
 
 It removes a dimension of negotiation. Per-seat invites "but only three of us would really use it," which is a conversation about your pricing model rather than about their problem.
 
-It removes work from your software. Every pricing dimension multiplies the states your system has to handle — proration, mid-cycle changes, overages, downgrades — and each of those is a path that is wrong by default. [Shipping without engineers](/build/shipping-without-engineers/) covers why payment states are among the first things to break for founder-built software.
+It removes work from your software. Every pricing dimension multiplies the states your system has to handle — proration, mid-cycle changes, overages, downgrades — and each of those is a path that is wrong by default. [Shipping without engineers](/founder-playbook/build/shipping-without-engineers/) covers why payment states are among the first things to break for founder-built software.
 
 It makes the experiment legible. You are testing one number. Two dimensions means two variables and ten data points, which tests nothing.
 
@@ -125,7 +125,7 @@ You will price too low. Here is the cheap correction.
 
 **When you do move existing customers:** long notice, a reason tied to what you have actually added since they signed, and an option to lock the old rate by committing to a longer term. Expect some churn. The churn is mostly concentrated in the segment that was only ever there for the price, which is the segment you were trying to stop attracting.
 
-**Do not raise prices to fix a fundraising narrative.** It is a visible temptation when revenue multiples are the metric being discussed, and it produces a cohort of unhappy customers precisely when you need references. [Raising a first round](/run/fundraising/) covers what investors actually read, and a hurried price rise is legible to them as exactly what it is.
+**Do not raise prices to fix a fundraising narrative.** It is a visible temptation when revenue multiples are the metric being discussed, and it produces a cohort of unhappy customers precisely when you need references. [Raising a first round](/founder-playbook/run/fundraising/) covers what investors actually read, and a hurried price rise is legible to them as exactly what it is.
 
 ## Worked example
 

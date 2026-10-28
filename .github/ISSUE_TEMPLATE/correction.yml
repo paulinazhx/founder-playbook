@@ -1,0 +1,46 @@
+name: Correction
+description: A claim, number or citation in a guide is wrong
+title: "correction: <guide> — <what is wrong>"
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections take priority over everything else here. A wrong number
+        propagates into somebody's actual decision.
+  - type: input
+    id: guide
+    attributes:
+      label: Which guide
+      placeholder: /sell/pricing/
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim, quoted
+      description: Paste the sentence as it appears, so it can be found exactly.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What the right answer is
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: >
+        A primary source — the organisation that published the figure, not a
+        blog restating it. If it is paywalled, quote the relevant line below.
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: The sample behind the figure, if you know it
+      description: >
+        Sample size, population and date. A median across companies unlike the
+        reader is reported here as such, so this helps.

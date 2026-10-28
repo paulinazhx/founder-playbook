@@ -49,7 +49,7 @@ faq:
 
 You need meetings with people who do not know you, and you are either about to start sending or already sending with disappointing results. You are probably a founder doing this personally, at a volume well below what a sales team would run.
 
-Skip this if your first ten customers are reachable warm or through introductions — do that instead, it is strictly better, and [founder-led sales](/sell/) explains why warm and trigger-based beats cold for the first ten. Come back here when you have exhausted the warm list.
+Skip this if your first ten customers are reachable warm or through introductions — do that instead, it is strictly better, and [founder-led sales](/founder-playbook/sell/) explains why warm and trigger-based beats cold for the first ten. Come back here when you have exhausted the warm list.
 
 ## The problem
 
@@ -94,7 +94,7 @@ The *why now* half is what founders skip, and it is the half that produces the o
 
 A useful discipline: if you cannot write both sentences for a name in under thirty seconds, delete the name. Lists get bad by accretion — a name goes on because it was easy to find, and nobody ever takes it off.
 
-This is also where AI tooling genuinely helps and where it genuinely does not. It is good at the mechanical half: finding companies matching a pattern, extracting role holders, summarising a public signal. It is poor at judging whether a signal is actually evidence of the problem, which is the part that determines your reply rate. [AI tools for founders](/build/ai-tools/) makes the general version of this argument — the tool closes the part of the loop that was never the bottleneck.
+This is also where AI tooling genuinely helps and where it genuinely does not. It is good at the mechanical half: finding companies matching a pattern, extracting role holders, summarising a public signal. It is poor at judging whether a signal is actually evidence of the problem, which is the part that determines your reply rate. [AI tools for founders](/founder-playbook/build/ai-tools/) makes the general version of this argument — the tool closes the part of the loop that was never the bottleneck.
 
 ## The email
 
@@ -110,7 +110,7 @@ The shape that follows from those constraints:
 
 No link. No attachment. No deck. No calendar link in the first email — that is the meeting-request CTA that measures 44% worse. Book the meeting in your reply to their reply.
 
-On personalisation: the first line should be specific, and the rest should be generic. One true specific sentence outperforms four paragraphs of researched detail, and the researched version does not survive contact with volume. What actually matters, per Gong, is using **the prospect's own language** for the problem — which is a list-and-research output, not a writing flourish. [Founder-led sales](/sell/) covers collecting that language from the calls you have already had, which is the cheapest source of it.
+On personalisation: the first line should be specific, and the rest should be generic. One true specific sentence outperforms four paragraphs of researched detail, and the researched version does not survive contact with volume. What actually matters, per Gong, is using **the prospect's own language** for the problem — which is a list-and-research output, not a writing flourish. [Founder-led sales](/founder-playbook/sell/) covers collecting that language from the calls you have already had, which is the cheapest source of it.
 
 ## Deliverability, which decides everything upstream
 
@@ -227,7 +227,7 @@ The email:
 
 **Symptom:** Meetings happen and nothing progresses.
 **Cause:** Interest-based targeting got you a curious person rather than a person with a funded problem.
-**Fix:** Qualify harder on the call. [Discovery and demos](/sell/discovery-and-demos/) covers the questions that separate curiosity from budget, and [pricing](/sell/pricing/) covers what to do when the interest is real but the number is wrong.
+**Fix:** Qualify harder on the call. [Discovery and demos](/founder-playbook/sell/discovery-and-demos/) covers the questions that separate curiosity from budget, and [pricing](/founder-playbook/sell/pricing/) covers what to do when the interest is real but the number is wrong.
 
 ## Sources
 

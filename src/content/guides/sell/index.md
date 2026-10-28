@@ -50,7 +50,7 @@ faq:
 
 You have something to sell, or nearly, and no salespeople. Maybe you have never sold anything and find the idea faintly humiliating. Maybe you have sold before, at a company with a brand, a deck and a price list, and are discovering how much of that was load-bearing.
 
-Skip this if you have an inbound motion that is already working at volume — your problem is a funnel, and funnels have their own literature. Skip it too if you are pre-product and your question is what to build; that is [scoping a first version](/build/scoping-v1/), and the honest sequence is that you should be having these conversations *before* you build, not after.
+Skip this if you have an inbound motion that is already working at volume — your problem is a funnel, and funnels have their own literature. Skip it too if you are pre-product and your question is what to build; that is [scoping a first version](/founder-playbook/build/scoping-v1/), and the honest sequence is that you should be having these conversations *before* you build, not after.
 
 ## The problem
 
@@ -70,11 +70,11 @@ Founder-led selling is five distinct jobs that get collapsed into the word "sale
 
 | Job | What it is | Where founders go wrong | Where it is covered |
 | --- | --- | --- | --- |
-| **Find** | Deciding which specific companies and people have the problem. | Defining the target as a category ("mid-market fintech") rather than as a list of names with a reason beside each. | Below, and [outbound](/sell/outbound/) for sourcing at volume. |
-| **Reach** | Getting a reply from a person who does not know you. | Treating a low reply rate as a message problem when it is almost always a list problem. | [Cold outbound](/sell/outbound/) |
-| **Qualify** | Finding out fast whether this is real, and disqualifying if not. | Trying to persuade instead of diagnose, so bad deals last months. | [Discovery and demos](/sell/discovery-and-demos/) |
-| **Run** | The call itself: understanding the problem, showing the thing against it. | Demoing features in the order they were built rather than against a stated problem. | [Discovery and demos](/sell/discovery-and-demos/) |
-| **Close** | A price, a decision, a date, a signature. | Never asking. Ending calls on "I'll send something over" and treating silence as deliberation. | Below, and [pricing](/sell/pricing/) |
+| **Find** | Deciding which specific companies and people have the problem. | Defining the target as a category ("mid-market fintech") rather than as a list of names with a reason beside each. | Below, and [outbound](/founder-playbook/sell/outbound/) for sourcing at volume. |
+| **Reach** | Getting a reply from a person who does not know you. | Treating a low reply rate as a message problem when it is almost always a list problem. | [Cold outbound](/founder-playbook/sell/outbound/) |
+| **Qualify** | Finding out fast whether this is real, and disqualifying if not. | Trying to persuade instead of diagnose, so bad deals last months. | [Discovery and demos](/founder-playbook/sell/discovery-and-demos/) |
+| **Run** | The call itself: understanding the problem, showing the thing against it. | Demoing features in the order they were built rather than against a stated problem. | [Discovery and demos](/founder-playbook/sell/discovery-and-demos/) |
+| **Close** | A price, a decision, a date, a signature. | Never asking. Ending calls on "I'll send something over" and treating silence as deliberation. | Below, and [pricing](/founder-playbook/sell/pricing/) |
 
 The one most founders are worst at is **close**, and the reason is specific: asking for a decision converts a pleasant ambiguous relationship into a definite answer that might be no. Ambiguity feels like pipeline. It is not. A prospect who has not said no is not therefore saying yes; they are usually saying nothing, and the cost of that is a quarter of your calendar spent on deals that were never going to happen.
 
@@ -94,11 +94,11 @@ Three reasons, and only the third is the deep one.
 
 Where the names come from, in descending order of usefulness: people you already know who have the problem; people one introduction away; companies you can see have the problem from public evidence — a job posting, a conference talk, a product gap, a complaint on a forum; then cold.
 
-**Promise something you can deliver by hand.** If the product does half of it, do the other half yourself. Manually, over email, at 11pm if necessary. This is not cheating, it is the correct approach, and the argument is in [scoping a first version](/build/scoping-v1/): doing it by hand is how you learn what the automated version must handle. It also means the thing you are testing is "will someone pay for this outcome" rather than "is my software finished," and only the first question matters yet.
+**Promise something you can deliver by hand.** If the product does half of it, do the other half yourself. Manually, over email, at 11pm if necessary. This is not cheating, it is the correct approach, and the argument is in [scoping a first version](/founder-playbook/build/scoping-v1/): doing it by hand is how you learn what the automated version must handle. It also means the thing you are testing is "will someone pay for this outcome" rather than "is my software finished," and only the first question matters yet.
 
-**Charge money.** Even a small amount. The transition from free to paid is where you find out whether the problem is real, and it is a different conversation entirely — free pilots generate enthusiasm from people with no stake. Discount freely; the price is not the information yet. What matters is that a budget holder agreed to move money. [Pricing](/sell/pricing/) covers what the number should actually be.
+**Charge money.** Even a small amount. The transition from free to paid is where you find out whether the problem is real, and it is a different conversation entirely — free pilots generate enthusiasm from people with no stake. Discount freely; the price is not the information yet. What matters is that a budget holder agreed to move money. [Pricing](/founder-playbook/sell/pricing/) covers what the number should actually be.
 
-**Track it in a spreadsheet.** One row per company. Who, how you reached them, the problem **in their words**, where it stalled, what they do instead today, and the date of the next concrete step. Six columns. A CRM here is premature: its fields encode a stage model you have not earned, and you will start managing the model instead of the deals. The tool-stack argument for this is in [buy, build, or skip](/build/).
+**Track it in a spreadsheet.** One row per company. Who, how you reached them, the problem **in their words**, where it stalled, what they do instead today, and the date of the next concrete step. Six columns. A CRM here is premature: its fields encode a stage model you have not earned, and you will start managing the model instead of the deals. The tool-stack argument for this is in [buy, build, or skip](/founder-playbook/build/).
 
 **Do not compute conversion rates.** With ten rows, three closes and seven losses is indistinguishable from five and five. Founders who compute percentages at this volume reliably conclude something confident and wrong. Look for *patterns in kind* instead: did the three who bought have anything in common that the seven did not?
 
@@ -118,7 +118,7 @@ The wrong trigger is a revenue number. The right trigger is **describability**.
 
 You are ready when you can write, on one page: who to contact, with the reason they have the problem; what to say first; the three objections that come up, in order of frequency; the answer to each; what the price is and when to say it; and what "qualified" means specifically enough that someone else could apply it.
 
-Then test it: hand that page to one person and have them win a deal you were not in. If they cannot, the page is wrong — which is useful, because it means you had not finished discovery and were about to pay someone to do it for you. [First hires](/run/first-hires/) covers the role itself, including why a first sales hire made too early is the most common expensive hiring mistake founders make.
+Then test it: hand that page to one person and have them win a deal you were not in. If they cannot, the page is wrong — which is useful, because it means you had not finished discovery and were about to pay someone to do it for you. [First hires](/founder-playbook/run/first-hires/) covers the role itself, including why a first sales hire made too early is the most common expensive hiring mistake founders make.
 
 The thing to be honest about: founders usually hand off because selling is uncomfortable, and dress it up as a scaling decision. The tell is hiring a salesperson while being unable to write the page.
 

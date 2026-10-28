@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PILLARS } from '../lib/pillars';
+import { withBase } from '../lib/seo';
+import { getCollection } from 'astro:content';
+
+const guides = await getCollection('guides');
+const cornerstone = (slug: string) => guides.find((g) => g.data.pillar === slug && g.data.cornerstone);
+---
+<BaseLayout
+  title="Page not found — The Founder Playbook"
+  description="That page does not exist. The library is twelve guides across three pillars — build, sell and run — and every one of them is linked from here."
+  path="/404/"
+  ogType="website"
+>
+  <h1>Page not found</h1>
+
+  <p>
+    That URL does not exist here. It may have been renamed, or the link that sent you
+    may have been wrong. Nothing has been deleted — this library has only ever grown.
+  </p>
+
+  <h2>The three pillars</h2>
+  <ul>
+    {PILLARS.map((pillar) => {
+      const anchor = cornerstone(pillar.slug);
+      return (
+        <li>
+          <a href={withBase(`/${pillar.slug}/`)}><strong>{pillar.title}</strong></a>
+          {anchor ? <> — {anchor.data.description}</> : null}
+        </li>
+      );
+    })}
+  </ul>
+
+  <h2>Every guide</h2>
+  {PILLARS.map((pillar) => (
+    <ul>
+      {guides
+        .filter((guide) => guide.data.pillar === pillar.slug)
+        .map((guide) => (
+          <li>
+            <a href={withBase(`/${guide.id.replace(/\/index$/, '')}/`)}>{guide.data.title}</a>
+          </li>
+        ))}
+    </ul>
+  ))}
+
+  <p>
+    If a link on this site is broken, that is a bug worth reporting —
+    <a href={withBase('/about/')}>the about page</a> says how.
+  </p>
+</BaseLayout>

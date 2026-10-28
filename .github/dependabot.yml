@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      # The build toolchain moves together; separate PRs for astro, its sitemap
+      # and its rss integration create three failing builds instead of one
+      # passing upgrade.
+      astro:
+        patterns: ["astro", "@astrojs/*"]
+      dev-tooling:
+        patterns: ["vitest", "cheerio", "markdownlint-cli2", "fast-glob", "js-yaml", "satori", "sharp"]
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly

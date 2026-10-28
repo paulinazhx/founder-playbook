@@ -41,7 +41,7 @@ faq:
 
 - Building is no longer the hard part. **Operating is.** Software has to be built, deployed, operated and changed, and the tools of the last three years have mostly collapsed the first one while leaving the other three exactly where they were.
 - The wall does not arrive at launch. It arrives with the first real customer, at an hour you did not pick, in a part of the system you did not write and cannot read.
-- Before choosing a route, check whether you need software at all for the first ten customers. Delivering the outcome by hand is slower per customer and dramatically faster at learning what the software must do. See [scoping a first version](/build/scoping-v1/).
+- Before choosing a route, check whether you need software at all for the first ten customers. Delivering the outcome by hand is slower per customer and dramatically faster at learning what the software must do. See [scoping a first version](/founder-playbook/build/scoping-v1/).
 - Pick the route by **who owns it at 2am**, not by what launches fastest. Contractors and agencies build well and operate badly, because operating is not what they sold you.
 - Four things break first and in roughly this order: **auth and account separation, payments, data loss, third-party integrations**. All four are invisible at launch and all four are visible to customers.
 - Decide early which parts are disposable prototype and which hold real customer data. A prototype that quietly became the system of record is the most expensive inheritance you can hand a first engineer.
@@ -50,7 +50,7 @@ faq:
 
 You do not write production code, and you need software to exist. You have been told that is no longer a problem, and you have also noticed that the people telling you that are selling the tools. You want to know what is genuinely possible alone, what it costs, and where it stops.
 
-Skip this if you have a technical co-founder already — your question is scope, not route. Skip it too if the question is which AI tool to pay for in general, which is [AI tools for founders](/build/ai-tools/).
+Skip this if you have a technical co-founder already — your question is scope, not route. Skip it too if the question is which AI tool to pay for in general, which is [AI tools for founders](/founder-playbook/build/ai-tools/).
 
 ## The problem
 
@@ -84,7 +84,7 @@ Five, honestly compared. The column that decides it is the last one.
 
 Two observations that change decisions.
 
-**The first row is underrated and almost never chosen.** For ten customers, you plus a spreadsheet plus a shared inbox is not a compromise, it is a research instrument. You see every exception by hand, which means that when you do build, you build the thing that handles the real cases rather than the imagined ones. [Scoping a first version](/build/scoping-v1/) makes the general argument: a step you were going to cut can usually be converted into a human doing it by hand, and that conversion is nearly always the right call early.
+**The first row is underrated and almost never chosen.** For ten customers, you plus a spreadsheet plus a shared inbox is not a compromise, it is a research instrument. You see every exception by hand, which means that when you do build, you build the thing that handles the real cases rather than the imagined ones. [Scoping a first version](/founder-playbook/build/scoping-v1/) makes the general argument: a step you were going to cut can usually be converted into a human doing it by hand, and that conversion is nearly always the right call early.
 
 **The fourth row is where non-technical founders lose the most money.** An agency sells building, prices building, and is excellent at building. Then the engagement ends and the thing it built keeps running, and nobody has sold you the operating. Six weeks later something breaks, the team that wrote it has moved to another client, and you are paying a new rate for someone to first *learn* the system before they can fix it. If you take this route, the retainer and response time for after delivery are the terms that matter more than the build price.
 
@@ -94,7 +94,7 @@ Four failures, in roughly the order they arrive. None are visible at launch. All
 
 **1. Authentication and account separation.** The classic failure is not a login page that does not work; it is one that works and leaks. A query that forgets to filter by account, so customer A sees customer B's records. This is the single most common serious defect in founder-built software, it is invisible until it is catastrophic, and the test for it is boring: log in as two separate accounts with real-looking data and try to reach the other one's records by changing an identifier in the URL. Do this every time you change anything data-related.
 
-**2. Payments and the states around them.** Taking a payment is easy because the payment providers made it easy. The hard part is the states: a card that fails on renewal, a refund, a mid-cycle upgrade, a subscription that cancels but whose data should persist, a webhook that arrives twice. Each of those is a path through your system and each is wrong by default. Keep pricing and plan structure deliberately simple early — one plan, one price — partly for the commercial reasons in [pricing](/sell/pricing/) and partly because every plan dimension multiplies these states.
+**2. Payments and the states around them.** Taking a payment is easy because the payment providers made it easy. The hard part is the states: a card that fails on renewal, a refund, a mid-cycle upgrade, a subscription that cancels but whose data should persist, a webhook that arrives twice. Each of those is a path through your system and each is wrong by default. Keep pricing and plan structure deliberately simple early — one plan, one price — partly for the commercial reasons in [pricing](/founder-playbook/sell/pricing/) and partly because every plan dimension multiplies these states.
 
 **3. Data loss with no usable backup.** Most hosted databases have backups. Far fewer founders have ever restored one. An untested backup is a belief, not a backup. Restore it once, to a scratch environment, and write down how long it took. That number is your actual worst case and you should know it before you need it.
 
@@ -104,7 +104,7 @@ Underneath all four is a thing you must own from day one, because it is the part
 
 ## What the first engineer inherits
 
-Plan this before you hire, because the handover shapes what that hire can do in their first quarter. See [first hires](/run/first-hires/) for the hiring decision itself; this is about the asset you hand over.
+Plan this before you hire, because the handover shapes what that hire can do in their first quarter. See [first hires](/founder-playbook/run/first-hires/) for the hiring decision itself; this is about the asset you hand over.
 
 Three kinds of inheritance, in increasing cost.
 
@@ -188,7 +188,7 @@ Before the first customer pays:
 
 **Symptom:** You are spending more time operating the software than talking to customers.
 **Cause:** You chose a route whose operating cost lands on the person who should be selling.
-**Fix:** Buy down the operating cost — contract engineer two days a week is usually enough — before buying more features. The constraint is your attention, which is the argument in [the tool stack](/build/).
+**Fix:** Buy down the operating cost — contract engineer two days a week is usually enough — before buying more features. The constraint is your attention, which is the argument in [the tool stack](/founder-playbook/build/).
 
 ## Sources
 

@@ -62,7 +62,7 @@ Meanwhile, here is what the silence actually does. Your investors have a portfol
 
 So the cost of a skipped bad month is not zero. It is the same as sending bad news, except you also forfeit the help, the credit for candour, and the record.
 
-There is a second cost, which only shows up during a raise and which is the reason this is a [fundraising](/run/fundraising/) activity disguised as an admin one. Twelve months of honest monthly updates is the single strongest reference an investor can read about you, and it is the only one that **cannot be manufactured on demand**. During the raise you will wish you had it, and there will be no way to produce it. That asymmetry is the whole argument for starting today, regardless of the month you are in.
+There is a second cost, which only shows up during a raise and which is the reason this is a [fundraising](/founder-playbook/run/fundraising/) activity disguised as an admin one. Twelve months of honest monthly updates is the single strongest reference an investor can read about you, and it is the only one that **cannot be manufactured on demand**. During the raise you will wish you had it, and there will be no way to produce it. That asymmetry is the whole argument for starting today, regardless of the month you are in.
 
 ## What the update is for
 
@@ -106,7 +106,7 @@ Mechanically:
 
 **Do not pre-emptively explain it away.** Macro conditions, seasonality and a competitor's price change may all be true and they are not what the reader wants in the first paragraph. Cause after fact, never instead of it.
 
-The hardest version is the one where the bad news is you. A hire you made is not working and it was your call; a direction you set was wrong. Saying so plainly is the highest-trust move available to a founder, and it is also just the [CEO job](/run/) — being the last decision means owning the ones that were wrong.
+The hardest version is the one where the bad news is you. A hire you made is not working and it was your call; a direction you set was wrong. Saying so plainly is the highest-trust move available to a founder, and it is also just the [CEO job](/founder-playbook/run/) — being the last decision means owning the ones that were wrong.
 
 ## Asks that work
 
@@ -213,7 +213,7 @@ What it deliberately does not do: no explanation of the churn in terms of market
 
 **Symptom:** During a raise, existing investors needed re-briefing from scratch.
 **Cause:** No update history, so there is nothing to re-brief from.
-**Fix:** Nothing fast, which is the point. Start now so the *next* raise is different. See [raising a first round](/run/fundraising/).
+**Fix:** Nothing fast, which is the point. Start now so the *next* raise is different. See [raising a first round](/founder-playbook/run/fundraising/).
 
 ## Sources
 

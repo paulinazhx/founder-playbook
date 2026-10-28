@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync } from 'node:fs';
 import fg from 'fast-glob';
 import yaml from 'js-yaml';
+import { BASE } from '../src/lib/site-urls.js';
 import { PILLARS } from '../src/lib/pillars.js';
 import { guideFrontmatterSchema } from '../src/lib/guide-schema';
 
@@ -76,5 +77,31 @@ describe('the guide collection', () => {
     expect(new Set(titles).size).toBe(guides.length);
     expect(new Set(descriptions).size).toBe(guides.length);
     expect(new Set(primaries).size).toBe(guides.length);
+  });
+
+  /**
+   * Guides hard-code the base in their internal links, because Astro 7's
+   * default Markdown processor does not invoke the plugin that would add it.
+   * These two assertions are what make that safe: they fail at the source,
+   * before a build, where `scripts/check-links.mjs` only fails after one.
+   */
+  it('prefixes every internal markdown link with the deployed base', () => {
+    const internal = /\]\((\/[^)]*)\)/g;
+    for (const guide of guides) {
+      for (const [, url] of guide.body.matchAll(internal)) {
+        expect(url.startsWith(`${BASE}/`), `${guide.id} links ${url}`).toBe(true);
+      }
+    }
+  });
+
+  it('points every internal markdown link at a route that exists', () => {
+    const routes = new Set(['/', '/about/', ...guides.map((g) => `/${g.id.replace(/\/index$/, '')}/`)]);
+    const internal = /\]\((\/[^)]*)\)/g;
+    for (const guide of guides) {
+      for (const [, url] of guide.body.matchAll(internal)) {
+        const relative = url.slice(BASE.length) || '/';
+        expect(routes.has(relative), `${guide.id} links ${url}, which is not a route`).toBe(true);
+      }
+    }
   });
 });

@@ -52,7 +52,7 @@ faq:
 
 You are raising a first institutional round — pre-seed or seed — for the first time. You have probably been told to "just start talking to investors" and have discovered that this is not instructions.
 
-Skip this if you are raising a Series A with a board and a CFO; the process is professionalised and your existing investors will run much of it. Skip it too if your real question is whether to raise at all, which is a strategy question — the short version is that revenue is the only form of funding that does not dilute you, and [pricing](/sell/pricing/) is frequently a faster route to runway than a round.
+Skip this if you are raising a Series A with a board and a CFO; the process is professionalised and your existing investors will run much of it. Skip it too if your real question is whether to raise at all, which is a strategy question — the short version is that revenue is the only form of funding that does not dilute you, and [pricing](/founder-playbook/sell/pricing/) is frequently a faster route to runway than a round.
 
 ## The problem
 
@@ -78,7 +78,7 @@ Five artifacts. In rough order of what decides the outcome.
 | **The one thing that is working** | A specific, defensible claim with a number and a definition. Not a projection. | Most of the first meeting. "Revenue grew" decides nothing; "11 of our 14 customers renewed and the three that did not were all single-location" decides a lot. |
 | **The metrics, with definitions** | A short set of numbers, each defined. What counts as a customer, as active, as revenue. | Diligence, and your credibility. An undefined metric that shifts between the deck and the data room is read as either sloppiness or spin, and the two cost the same. |
 | **The deck** | 10 to 15 slides. Problem, what you do, what is working, market, team, what the money is for. | Whether the first meeting happens, and nothing else. |
-| **The update history** | Monthly investor updates going back as far as you have them. | Trust, which is most of what a seed investment is. See [investor updates](/run/investor-updates/). |
+| **The update history** | Monthly investor updates going back as far as you have them. | Trust, which is most of what a seed investment is. See [investor updates](/founder-playbook/run/investor-updates/). |
 
 The fifth row is the one founders underweight, and it is the only one that is cheap to build and impossible to fake. A year of monthly updates — including the two bad months, described as bad — tells an investor what you are like to be in business with, in a way no meeting can. If you are twelve months from raising, start sending them now, to anyone who has expressed interest. It is the highest-return fundraising activity available to you today and it does not feel like fundraising.
 

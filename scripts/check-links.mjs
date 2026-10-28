@@ -12,6 +12,13 @@
  * (`/founder-playbook/sell/`). Comparing the two directly would report every
  * route as both broken and orphaned, so hrefs are stripped back to
  * site-relative before they are matched against the route set.
+ *
+ * An internal link that does NOT carry the base is a failure, not something to
+ * normalise. An earlier version of this script accepted both forms, and that
+ * tolerance hid a real defect: a Markdown plugin that was supposed to add the
+ * prefix never ran, so every in-body cross-link shipped as `/sell/`, 404ing in
+ * production while this check reported a pass. Requiring the prefix is the
+ * assertion that would have caught it.
  */
 import { readFileSync } from 'node:fs';
 import fg from 'fast-glob';
@@ -25,6 +32,11 @@ function stripBase(pathname) {
   if (pathname === BASE) return '/';
   if (pathname.startsWith(`${BASE}/`)) return pathname.slice(BASE.length);
   return pathname;
+}
+
+/** True when a root-relative path carries the deployed base prefix. */
+function hasBase(pathname) {
+  return pathname === BASE || pathname.startsWith(`${BASE}/`);
 }
 
 const files = await fg('dist/**/index.html');
@@ -42,6 +54,12 @@ for (const file of files) {
     if (!href || /^(https?:|mailto:|#)/.test(href)) return;
     const { pathname } = new URL(href, 'https://placeholder.invalid');
     if (/\.[^/.]+$/.test(pathname)) return; // asset (e.g. /llms.txt, /rss.xml), not a route
+    if (!hasBase(pathname)) {
+      failures.push(
+        `${route} -> internal link ${href} is missing the ${BASE} prefix, so it 404s in production`
+      );
+      return;
+    }
     const relative = stripBase(pathname);
     const target = relative.endsWith('/') ? relative : `${relative}/`;
     internal.push(target);

@@ -1,0 +1,31 @@
+---
+/**
+ * Table of contents for a guide, built from the rendered headings.
+ *
+ * Guides run 2,800 to 3,600 words, which is past the point where a reader
+ * arriving from a search result wants to see the shape before committing. Only
+ * depth-2 headings appear: the required section shape is all h2, so a deeper
+ * tree would add noise rather than navigation.
+ *
+ * No JavaScript. The heading ids come from the Markdown processor, so these are
+ * plain fragment links that work with the page's own anchors.
+ */
+interface Props {
+  headings: Array<{ depth: number; slug: string; text: string }>;
+}
+const { headings } = Astro.props;
+const sections = headings.filter((heading) => heading.depth === 2);
+---
+{sections.length > 2 && (
+  <nav
+    aria-label="On this page"
+    style="background:var(--bg-soft);border:1px solid var(--line);border-radius:6px;padding:1rem 1.25rem;margin:1.5rem 0;font-size:.95rem;"
+  >
+    <p style="margin:0 0 .5rem;font-weight:600;">On this page</p>
+    <ol style="margin:0;padding-left:1.2rem;">
+      {sections.map((section) => (
+        <li style="margin:.15rem 0;"><a href={`#${section.slug}`}>{section.text}</a></li>
+      ))}
+    </ol>
+  </nav>
+)}

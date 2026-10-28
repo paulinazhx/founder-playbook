@@ -49,7 +49,7 @@ faq:
 
 You have calls booked and you are not sure what to do in them, or you are doing something and it is not converting. You have probably watched a professional demo and noticed yours does not feel like that, and concluded the problem is polish.
 
-Skip this if you cannot get calls booked at all — that is [cold outbound](/sell/outbound/), and it is a different problem with a different fix. Skip it too if you are post-product-market-fit with a sales team; you need a qualification framework your reps can apply consistently, which is a heavier machine than this.
+Skip this if you cannot get calls booked at all — that is [cold outbound](/founder-playbook/sell/outbound/), and it is a different problem with a different fix. Skip it too if you are post-product-market-fit with a sales team; you need a qualification framework your reps can apply consistently, which is a heavier machine than this.
 
 ## The problem
 
@@ -59,7 +59,7 @@ The buyer agreed to a call about your product. So you show them your product. Yo
 
 What went wrong is that the demo **answered questions nobody asked**. You showed eleven capabilities. Perhaps two were relevant to this buyer. You did not know which two, so you showed all eleven, and the nine irrelevant ones did active damage: they diluted attention, they consumed the time you needed for the real conversation, and every one of them was an invitation to object to something that does not matter. A buyer who spends four minutes on your permissions model — because you showed it, so they assume it matters — has spent four minutes not telling you what is actually breaking in their week.
 
-The second failure is subtler and worse. The call produced no information. You know whether they liked the demo. You do not know what they do today, what it costs them, who else decides, or whether anything makes this urgent. So you cannot forecast the deal, you cannot write a follow-up that says anything specific, and — the part that compounds — you cannot use the call to improve the product or the pitch. [Founder-led sales](/sell/) makes the general argument: the first ten calls are research with a payment attached, and a demo-first call returns almost no research.
+The second failure is subtler and worse. The call produced no information. You know whether they liked the demo. You do not know what they do today, what it costs them, who else decides, or whether anything makes this urgent. So you cannot forecast the deal, you cannot write a follow-up that says anything specific, and — the part that compounds — you cannot use the call to improve the product or the pitch. [Founder-led sales](/founder-playbook/sell/) makes the general argument: the first ten calls are research with a payment attached, and a demo-first call returns almost no research.
 
 Why founders do it anyway: the demo is the part you control. Asking questions means sitting in silence, hearing that the problem is not very important, or being asked something you cannot answer. Demoing is performing, and performing is more comfortable than inquiring. That is the whole mechanism, and naming it is most of the fix.
 
@@ -109,7 +109,7 @@ The purpose of the call is to find out whether this is real. Four things should 
 
 **No trigger.** Nothing has changed and nothing will. The status quo has survived for years and will survive your product.
 
-**A blocker on your refusal list.** They need something you have deliberately decided not to do. [Scoping a first version](/build/scoping-v1/) argues for writing that list in advance precisely so this moment is a lookup rather than an argument you lose in the room.
+**A blocker on your refusal list.** They need something you have deliberately decided not to do. [Scoping a first version](/founder-playbook/build/scoping-v1/) argues for writing that list in advance precisely so this moment is a lookup rather than an argument you lose in the room.
 
 How to actually do it: "Honestly, I don't think we're the right fit yet, and here's why." Then say why, specifically. Two things happen. You get your afternoon back. And — consistently, surprisingly — a meaningful fraction of the people you disqualify refer you to someone who is a fit, or come back when the trigger arrives, because you were the person who told them the truth.
 
@@ -137,7 +137,7 @@ Weak: "I'll send some information over." Weak: "let me know what you think." Wea
 
 Strong: "Next step as I see it — you send me a sample file, I run it and send back what it produces, and we talk Thursday at 3. Does that work, or is there someone else who should be on it?"
 
-If they will not agree to any dated step, that is a no, and it is better to hear it now. Ask directly: "it sounds like this isn't a priority this quarter — is that fair?" Buyers almost always confirm honestly when given a graceful route, and a confirmed no is worth more than an unconfirmed maybe. [Pricing](/sell/pricing/) covers the separate question of when in this sequence a number should be said out loud.
+If they will not agree to any dated step, that is a no, and it is better to hear it now. Ask directly: "it sounds like this isn't a priority this quarter — is that fair?" Buyers almost always confirm honestly when given a graceful route, and a confirmed no is worth more than an unconfirmed maybe. [Pricing](/founder-playbook/sell/pricing/) covers the separate question of when in this sequence a number should be said out loud.
 
 ## Worked example
 

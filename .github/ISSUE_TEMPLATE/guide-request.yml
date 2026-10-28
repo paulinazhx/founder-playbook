@@ -1,0 +1,37 @@
+name: Guide request
+description: Suggest a decision a founder faces that no guide covers
+title: "guide: <the decision>"
+labels: ["guide-request"]
+body:
+  - type: textarea
+    id: decision
+    attributes:
+      label: The decision, as a founder actually faces it
+      description: >
+        One decision, not a topic. "How to price with no comparables" rather
+        than "pricing".
+    validations:
+      required: true
+  - type: textarea
+    id: whybad
+    attributes:
+      label: What the existing answers get wrong
+      description: >
+        What does a search for this currently return, and why is it unhelpful?
+    validations:
+      required: true
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: Which pillar
+      options:
+        - Build — what you ship and what you run it on
+        - Sell — getting to revenue
+        - Run — the CEO job
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Any primary sources you know of
